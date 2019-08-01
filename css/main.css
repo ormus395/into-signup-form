@@ -1,0 +1,187 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***** General *****/
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.container {
+    padding: 4rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input {
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 4px;
+    margin: .5rem;
+    padding: 1rem;
+    width: 85%;
+    outline: none;
+}
+
+.input::placeholder {
+    color: hsl(249, 10%, 26%);
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.red {
+    color: hsl(0, 100%, 74%);
+}
+
+/**** background ****/
+.background {
+    background: url("../images/bg-intro-desktop.png");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.background--overlay {
+    background-color: hsl(0, 100%, 74%);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+/**** main ****/
+.main__col1 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.main__col1__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.main__col2 {
+}
+
+.main__col2__cta {
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 8px;
+    box-shadow: 0 8px 1px rgba(0, 0, 0, 0.2); 
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.main__col2__cta p {
+    line-height: 1.5;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 1px rgba(0, 0, 0, 0.3);
+}
+
+.form form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.submit {
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 1px green;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    /* letter-spacing: 1px; */
+    padding: 1.2rem 2rem;
+    margin: .5rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 85%;
+}
+
+.terms {
+    color: hsl(246, 25%, 77%);
+    font-size: .8rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: .5rem;
+    text-align: center;
+    width: 80%;
+}
