@@ -117,6 +117,10 @@ html {
     font-size: .8rem;
 }
 
+.para {
+    max-width: 560px;
+}
+
 .red {
     color: hsl(0, 100%, 74%);
 }
@@ -216,13 +220,14 @@ html {
     width: 80%;
 }
 
-@media (min-width:1180px) {
+@media (min-width:1000px) {
     .container {
-        justify-content: space-around;
+        /* justify-content: space-evenly; */
     }
 
     .col {
         max-width: 40%;
+
     }
 
     .main__col1 {
@@ -234,5 +239,10 @@ html {
 
     .main__col1__title {
         font-size: 2rem;
+        max-width: 80%;
+    }
+
+    .main__col1 p {
+        max-width: 560px;
     }
 }
