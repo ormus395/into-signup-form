@@ -31,11 +31,15 @@
         </p>
       </div>
       <div class="form">
-        <form action="">
+        <form action="" onsubmit="return validate()">
           <input class="input" type="text" placeholder="First Name">
+          <span class="error">First Name cannot be empty</span>
           <input class="input" type="text" placeholder="Last Name">
+          <span class="error">Last Name cannot be empty</span>
           <input class="input" type="email" placeholder="Email Address">
+          <span class="error">Looks like this is not an email</span>
           <input class="input" type="password" placeholder="Password">
+          <span class="error">Password cannot be empty</span>
           <button class="submit">Claim your free trial</button>
           <p class="terms">By clicking the button, you are agreeing to our <span class="red">Terms and Services</span>
           </p>
@@ -50,5 +54,6 @@
     </p>
   </footer>
 </body>
+<script src="js/index.js"></script>
 
 </html>
